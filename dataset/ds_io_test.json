@@ -1,0 +1,19 @@
+{
+	"name": "ds_io_test",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ablob_covidreportingsa",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FMB_MService.txt",
+				"container": "input"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

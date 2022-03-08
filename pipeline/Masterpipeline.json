@@ -1,0 +1,23 @@
+{
+	"name": "Masterpipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_ingest_population_data",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-03-08T19:44:26Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
