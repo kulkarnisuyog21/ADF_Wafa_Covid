@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup ECDC File List",
-				"type": "Lookup",
+				"name": "Get File details",
+				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
@@ -15,22 +15,22 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "JsonSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "JsonReadSettings"
-						}
-					},
 					"dataset": {
-						"referenceName": "ds_ecdc_file_list",
+						"referenceName": "ds_population_raw_gz",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": false
+					"fieldList": [
+						"exists",
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
 				}
 			}
 		],
