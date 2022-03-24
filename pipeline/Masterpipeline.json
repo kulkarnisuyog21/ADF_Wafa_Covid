@@ -5,14 +5,7 @@
 			{
 				"name": "Execute Pipeline1",
 				"type": "ExecutePipeline",
-				"dependsOn": [
-					{
-						"activity": "Set variable1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
@@ -21,23 +14,8 @@
 					},
 					"waitOnCompletion": true
 				}
-			},
-			{
-				"name": "Set variable1",
-				"type": "SetVariable",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "test",
-					"value": "test value"
-				}
 			}
 		],
-		"variables": {
-			"test": {
-				"type": "String"
-			}
-		},
 		"annotations": [],
 		"lastPublishTime": "2022-03-08T19:44:26Z"
 	},
