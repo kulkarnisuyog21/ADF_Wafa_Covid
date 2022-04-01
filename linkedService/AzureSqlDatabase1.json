@@ -6,7 +6,7 @@
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=storedata9001.database.windows.net;initial catalog=storedata;user id=kulkarnisuyog21",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk0NTMyODkyLTczMzctNDNDMS05MDdGLTc0MEEzMkUyMTQzMF9mYmE0ODBlMy0wYmM5LTQzNGQtODZjNS00MGJjOTIxMzIwY2EiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk0NTMyODkyLTczMzctNDNDMS05MDdGLTc0MEEzMkUyMTQzMF8yMzg3M2ZlNi04NWZjLTRkMDUtOWRlMC1mNjY0ZWVjYjRmZGIiDQp9"
 		}
 	}
 }
